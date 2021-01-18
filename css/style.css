@@ -8,6 +8,7 @@
 
 body{
     font-family:'Roboto', sans-serif;
+    height: 100%;
 }
 ul{
     list-style: none;
@@ -57,9 +58,13 @@ img{
 
 .hero{
     background-image: url(/images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     position: relative;
     color: #fff;
+    object-fit: cover;
 }
 .hero .content{
     height: 100%;
@@ -102,4 +107,210 @@ font-size: 30px;
     z-index: 10;
 }
 
-/* Main Content */
+/* OFFERS*/
+#offers{
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#offers .caption {
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+#offers .caption h1{
+    font-size: 50px;
+}
+#offers .caption p{
+    font-size: 24px;
+}
+
+#offers .container{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card p{
+    background: #333;
+    color: #fff;
+    padding: 5px;
+}
+
+/* ABOUT US*/
+
+#aboutus{
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/images/bg2.jpg) no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#aboutus h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    position: absolute;
+    top:50px;
+}
+
+#aboutus .colum{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#aboutus .colum .colum1{
+    width: 25%;
+}
+
+.colum1 i{
+    font-size: 50px;
+    border: 3px #fff solid;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px 0;
+    color: #7985FF;
+}
+.colum1 i:hover{
+    color: #fff;
+}
+
+.colum1 h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+/* FOOTER*/
+
+.footer{
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4C6DA;
+}
+
+.footer .social-icons i{
+    font-size: 35px;
+    color: #000;
+    margin-right: 50px;
+}
+
+.social-icons i:hover{
+    color: #7985FF;
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .hero .content h3{
+        font-size: 35px;
+    }
+    .hero .content h1{
+        font-size: 45px;
+    }
+
+    #offers{
+            height: 150vh;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #offers .caption {
+            margin-top: 50px;
+            text-transform: uppercase;
+        }
+        #offers .caption h1{
+            font-size: 40px;
+        }
+        #offers .caption p{
+            font-size: 20px;
+        }
+        
+        #offers .container{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            margin-bottom: 30px;
+        }
+
+        #aboutus{
+            height: 160vh;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/images/bg2.jpg) no-repeat center center/cover;
+            position: relative;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #aboutus h1{
+            font-size: 40px;
+            text-transform: uppercase;
+            position: absolute;
+            top:50px;
+        }
+        
+        #aboutus .colum{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #aboutus .colum .colum1{
+            width: 100%;
+        }
+        
+        .colum1 i{
+            font-size: 50px;
+            border: 3px #fff solid;
+            padding: 20px;
+            border-radius: 50%;
+            margin: 20px 0;
+            color: #7985FF;
+        }
+        .colum1 i:hover{
+            color: #fff;
+        }
+        
+        .colum1 h3{
+            font-size: 30px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+        
+        .footer .social-icons i{
+            font-size: 35px;
+            color: #000;
+            margin: 0;
+            padding: 20px;
+        }
+}
+
+
