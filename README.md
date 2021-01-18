@@ -1,2 +1,2 @@
 # lending-page
-travel-agency-zadatak.netlify.app
+https://travel-agency-zadatak.netlify.app
